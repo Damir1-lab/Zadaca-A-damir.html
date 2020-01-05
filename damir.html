@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Animacija</title>
+    <style>
+      body {
+        width: 800px;
+
+        background-color: #050210;
+        margin: 0 auto;
+
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        display: flex;
+      }
+
+      .krug {
+        position: relative;
+        width: 350px;
+        height: 350px;
+        border-radius: 70%;
+        background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
+        animation: animate 0.9s linear infinite;
+      }
+      @keyframes animate {
+        0% {
+          transform: rotate(0deg);
+        }
+
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      .krug span {
+        position: absolute;
+        width: 350px;
+        height: 350px;
+        border-radius: 70%;
+        background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
+        
+      }
+      .krug span:nth-child(1) {
+        filter: blur(5px);
+      }
+      .krug span:nth-child(2) {
+        filter: blur(10px);
+      }
+      .krug span:nth-child(3) {
+        filter: blur(25px);
+      }
+      .krug span:nth-child(4) {
+        filter: blur(50px);
+      }
+      /*.krug:after {
+        content: "";
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        right: 20px;
+        bottom: 20px;
+        background:#000033;
+        border-radius: 70%;
+        animation: animm 1.53s linear infinite;
+      }*/
+      .krug2 {
+        content: "";
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        right: 20px;
+        bottom: 20px;
+        background:#000033;
+        border-radius: 70%;
+        animation: animm 1s linear infinite;
+      }
+      .krug3{
+        content: "";
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        right: 20px;
+        bottom: 20px;
+        background: #000033;
+        border-radius: 70%;
+        animation: animm 1.5s linear infinite;
+       
+      }
+      .krug4{
+        content: "";
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        right: 20px;
+        bottom: 20px;
+        background: #000033;
+        border-radius: 70%;
+        animation: animmm 1s linear infinite;
+
+      }
+      @keyframes animmm{
+        from {
+          transform: scale(0, 0);
+          opacity: 0.1;
+        }
+        to {
+          transform: scale(0.3, 0.3);
+          opacity: 1;
+         
+        }
+        
+      }
+      @keyframes animmmm{
+        from {
+          transform: scale(0, 0);
+          opacity: 0.1;
+        }
+        to {
+          transform: scale(0.6, 0.6);
+          opacity: 1;
+         
+        }
+      }
+     
+     
+
+      @keyframes animm {
+        from {
+          transform: scale(0, 0);
+          opacity: 0.1;
+        }
+        to {
+          transform: scale(1, 1);
+          opacity: 1;
+         
+        }
+        
+      }
+     
+      .crn {
+        content: "";
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        right: 20px;
+        bottom: 20px;
+        background-color: black;
+        border-radius: 70%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="krug">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      
+      <div class="crn">
+      </div>
+      <div class="krug2">
+        
+      </div>
+      <div class="krug3"></div>
+     <div class="krug4"></div>
+      </div>
+     
+      </div>
+    </div>
+  </body>
+</html>
+
